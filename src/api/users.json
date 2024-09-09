@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "name": "Володимир",
+    "surname": "Бабич",
+    "count": 1,
+    "abbreviation": "babych"
+  },
+  {
+    "id": 2,
+    "name": "Катерина",
+    "surname": "Брезіцька",
+    "count": 2,
+    "abbreviation": "brezitska"
+  },
+  {
+    "id": 3,
+    "name": "Данило",
+    "surname": "Бутін",
+    "count": 3,
+    "abbreviation": "butin"
+  },
+  {
+    "id": 4,
+    "name": "Дмитро",
+    "surname": "Верешко",
+    "count": 4,
+    "abbreviation": "vereshko"
+  },
+  {
+    "id": 5,
+    "name": "Олександр",
+    "surname": "Глущенко",
+    "count": 5,
+    "abbreviation": "glushchenko"
+  },
+  {
+    "id": 6,
+    "name": "Іван",
+    "surname": "Грішин",
+    "count": 6,
+    "abbreviation": "grishin"
+  },
+  {
+    "id": 7,
+    "name": "Денис",
+    "surname": "Гуславський",
+    "count": 7,
+    "abbreviation": "guslavsky"
+  },
+  {
+    "id": 8,
+    "name": "Дмитро",
+    "surname": "Дейна",
+    "count": 8,
+    "abbreviation": "deina"
+  },
+  {
+    "id": 9,
+    "name": "Анастасія",
+    "surname": "Журба",
+    "count": 9,
+    "abbreviation": "zhurba"
+  },
+  {
+    "id": 10,
+    "name": "Олександр",
+    "surname": "Койнаш",
+    "count": 10,
+    "abbreviation": "koinash"
+  },
+  {
+    "id": 11,
+    "name": "Олександр",
+    "surname": "Коломієць",
+    "count": 11,
+    "abbreviation": "kolomiets"
+  },
+  {
+    "id": 12,
+    "name": "Іван",
+    "surname": "Лесик",
+    "count": 12,
+    "abbreviation": "lesyk"
+  },
+  {
+    "id": 13,
+    "name": "Ярослав",
+    "surname": "Мусік",
+    "count": 13,
+    "abbreviation": "musik"
+  },
+  {
+    "id": 14,
+    "name": "Дмитро",
+    "surname": "Сільничий",
+    "count": 14,
+    "abbreviation": "silnichy"
+  },
+  {
+    "id": 15,
+    "name": "Вадим",
+    "surname": "Сухарєв",
+    "count": 15,
+    "abbreviation": "sukharev"
+  },
+  {
+    "id": 16,
+    "name": "Андрій",
+    "surname": "Цімбота",
+    "count": 16,
+    "abbreviation": "tsimbota"
+  },
+  {
+    "id": 17,
+    "name": "Богдан",
+    "surname": "Шикера",
+    "count": 17,
+    "abbreviation": "shykera"
+  }
+]

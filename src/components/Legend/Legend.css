@@ -1,0 +1,18 @@
+.legend-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Прижати всі елементи до лівого краю */
+  padding-left: 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Відстань між кольором і текстом */
+}

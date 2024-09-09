@@ -1,0 +1,45 @@
+.call-me-container {
+  text-align: left;
+}
+
+.call-me-text {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.telegram-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.telegram-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.telegram-text {
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.telegram-link:hover .telegram-text {
+  color: #0088cc;
+}
+
+.telegram-link:hover .telegram-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+
+body.light-mode .call-me-text {
+  color: rgb(33, 35, 42) !important;
+}
+
+body.light-mode .telegram-text {
+  color: rgb(33, 35, 42) !important;
+}
