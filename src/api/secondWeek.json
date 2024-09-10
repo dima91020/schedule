@@ -144,7 +144,7 @@
     "teacher": "ас. Заєць С. С.",
     "typeLesson": "172-01 Прак",
     "isElective": true,
-    "usersId": []
+    "usersId": [14]
   },
   {
     "id": 13,

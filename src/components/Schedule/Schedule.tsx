@@ -20,6 +20,11 @@ export const Schedule = () => {
   const selectedUserId = userId ? +userId : 0;
   const elementRef = useRef<HTMLDivElement>(null);
 
+  const nowDay = new Date();
+  nowDay.setDate(11)
+  // nowDay.setHours(8)
+  // nowDay.setMinutes(29)
+
   useEffect(() => {
     if (selectedUserId >= 1 && selectedUserId <= 17) {
       const filteredFirstWeekLessons = firstWeekLessonsFromServer.filter(lesson => lesson.usersId.includes(selectedUserId));
@@ -61,14 +66,14 @@ export const Schedule = () => {
               Перший тиждень
             </span>
           </h3>
-          <FirstWeek lessons={firstWeekLessons} isCurrentWeek={isCurrentWeek} nowDay={new Date()} />
+          <FirstWeek lessons={firstWeekLessons} isCurrentWeek={isCurrentWeek} nowDay={nowDay} />
           <h3>
             <span style={{ display: 'flex', justifyContent: 'center' }} id="ctl00_MainContent_lblSecondTable">
               Другий тиждень
             </span>
           </h3>
           <div ref={elementRef}>
-            <SecondWeek lessons={secondWeekLessons} isCurrentWeek={isCurrentWeek} nowDay={new Date()} />
+            <SecondWeek lessons={secondWeekLessons} isCurrentWeek={isCurrentWeek} nowDay={nowDay} />
           </div>
         </div>
       </div>

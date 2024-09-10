@@ -145,7 +145,7 @@
     "teacher": "ас. Заєць С. С.",
     "typeLesson": "172-01 Прак",
     "isElective": true,
-    "usersId": []
+    "usersId": [14]
   },
   {
     "id": 13,
@@ -265,7 +265,7 @@
     "teacher": "доц. Лісовець С. М.",
     "typeLesson": "08-01 Лек on-line",
     "isElective": true,
-    "usersId": []
+    "usersId": [14]
   },
   {
     "id": 23,
