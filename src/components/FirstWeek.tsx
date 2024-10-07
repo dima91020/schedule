@@ -9,7 +9,7 @@ type Props = {
   nowDay: Date;
 };
 
-const lessonTimes = ["08:30", "10:25", "12:20", "14:15", "16:10"];
+const lessonTimes = ["08:30", "10:25", "12:20", "14:15", "16:10", "18:30"];
 
 export const FirstWeek: React.FC<Props> = ({ lessons, isCurrentWeek, nowDay }) => {
   const daysOfWeek = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
@@ -22,10 +22,10 @@ export const FirstWeek: React.FC<Props> = ({ lessons, isCurrentWeek, nowDay }) =
   useEffect(() => {
     const currentDayIndex = nowDay.getDay() - 1;
     const minutesSinceMidnight = nowDay.getHours() * 60 + nowDay.getMinutes();
-  
+
     let currentLessonNumber: number | null = null;
     let nextLessonNumber: number | null = null;
-  
+
     // Знаходимо поточну пару на основі часу
     if (minutesSinceMidnight >= 510 && minutesSinceMidnight < 610) {
       currentLessonNumber = 1;
@@ -38,9 +38,9 @@ export const FirstWeek: React.FC<Props> = ({ lessons, isCurrentWeek, nowDay }) =
     } else if (minutesSinceMidnight >= 970 && minutesSinceMidnight < 1075) {
       currentLessonNumber = 5;
     }
-  
+
     const lessonsForDay = lessons.filter((lesson) => lesson.day === daysOfWeek[currentDayIndex]);
-  
+
     if (currentLessonNumber !== null) {
       const nextLesson = lessonsForDay.find((lesson) => lesson.count > (currentLessonNumber as number));
       nextLessonNumber = nextLesson ? nextLesson.count : null;
@@ -53,12 +53,12 @@ export const FirstWeek: React.FC<Props> = ({ lessons, isCurrentWeek, nowDay }) =
       });
       nextLessonNumber = nextLesson ? nextLesson.count : null;
     }
-  
+
     setCurrentLesson(currentLessonNumber);
     setNextLesson(nextLessonNumber);
     setCurrentDay(currentDayIndex);
   }, [nowDay, lessons, lessonTimes]);
-  
+
   const lessonsForDay = lessons.filter(
     (lesson) => lesson.day === daysOfWeek[currentDay!]
   );
@@ -128,7 +128,7 @@ export const FirstWeek: React.FC<Props> = ({ lessons, isCurrentWeek, nowDay }) =
           </tr>
         </thead>
         <tbody>
-          {[1, 2, 3, 4, 5].map((lessonNumber) => (
+          {[1, 2, 3, 4, 5, 6].map((lessonNumber) => (
             <tr key={lessonNumber}>
               <td>
                 {lessonNumber}

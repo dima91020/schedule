@@ -173,6 +173,28 @@ body {
   background-color: rgb(238, 207, 122);
 }
 
+.elective_discipline {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.elective_discipline::before {
+  content: "🚫";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: red;
+  line-height: 0;
+}
+
+
 a.plainLink:link,
 a.plainLink:visited {
   color: rgb(255, 255, 255);
