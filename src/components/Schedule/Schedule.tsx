@@ -21,7 +21,7 @@ export const Schedule = () => {
   const elementRef = useRef<HTMLDivElement>(null);
 
   const nowDay = new Date();
-  nowDay.setDate(11)
+  // nowDay.setDate(11)
   // nowDay.setHours(8)
   // nowDay.setMinutes(29)
 

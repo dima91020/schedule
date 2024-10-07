@@ -16,6 +16,10 @@ export const Legend: React.FC = () => {
         <span className="legend-color closest_pair"></span>
         <span>Наступна пара</span>
       </div>
+      <div className="legend-item">
+        <span className="legend-color elective_discipline"></span>
+        <span>Вибіркова дисципліна</span>
+      </div>
     </div>
   );
 };
